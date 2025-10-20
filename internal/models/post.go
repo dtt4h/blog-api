@@ -3,10 +3,10 @@ package models
 import "time"
 
 type Post struct {
-	ID        int
-	Title     string
-	Content   string
-	Published bool
-	CreatedAt time.Time
-	UpdatedAt time.Time
+	ID        int       `json:"id"`
+	Title     string    `json:"title"`
+	Content   string    `json:"content"`
+	Published bool      `json:"published"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
 }
